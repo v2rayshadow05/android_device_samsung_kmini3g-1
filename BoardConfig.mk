@@ -64,7 +64,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 include $(DEVICE_PATH)/fingerprint/board.mk
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_kmini3g
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_kmini3g
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
